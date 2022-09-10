@@ -8,11 +8,12 @@ import { PagesComponent } from './pages.component';
 import {SharedModule} from "../shared/shared.module";
 import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "../app-routing.module";
+import {PagesRoutingModule} from "./pages-routing.module";
 
 
 
 @NgModule({
-  declarations: [
+  declarations: [ // Si no se exportan no funcionan.
     NopagefoundComponent,
     DashboardComponent,
     ProgressComponent,
@@ -24,6 +25,7 @@ import {AppRoutingModule} from "../app-routing.module";
     SharedModule,
     RouterModule,
     AppRoutingModule,
+    PagesRoutingModule
   ]
 })
 export class PagesModule { }
