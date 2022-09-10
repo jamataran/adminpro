@@ -9,6 +9,8 @@ import {SharedModule} from "../shared/shared.module";
 import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "../app-routing.module";
 import {PagesRoutingModule} from "./pages-routing.module";
+import {FormsModule} from "@angular/forms";
+import {ComponentsModule} from "../components/components.module";
 
 
 
@@ -25,7 +27,9 @@ import {PagesRoutingModule} from "./pages-routing.module";
     SharedModule,
     RouterModule,
     AppRoutingModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    FormsModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }
