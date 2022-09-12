@@ -19,7 +19,7 @@ export class IncrementadorComponent implements OnInit {
   }
 
   aumentarValor(valor: number) {
-    this.progreso += Number(valor);
+    this.progreso = Number(this.progreso + valor);
     this.emitirProgreso();
   }
 
@@ -27,16 +27,16 @@ export class IncrementadorComponent implements OnInit {
     debugger;
     this.progreso = valor;
 
-    if (this.progreso > 100)
+    if (valor > 100)
       this.progreso = 100;
 
-    if (this.progreso < 0)
+    if (valor < 0)
       this.progreso = 0;
 
     this.emitirProgreso();
   }
 
-  emitirProgreso(){
+  emitirProgreso() {
     this.progresoChange.emit(this.progreso);
   }
 
