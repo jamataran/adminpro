@@ -29,8 +29,7 @@ import {NgChartsModule} from "ng2-charts";
     AppRoutingModule,
     PagesRoutingModule,
     FormsModule,
-    ComponentsModule,
-    NgChartsModule
+    ComponentsModule
   ]
 })
 export class PagesModule {
